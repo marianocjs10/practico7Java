@@ -1,4 +1,3 @@
-
 public class Nota {
     private String catedra;
     private double notaExamen;
@@ -19,6 +18,5 @@ public class Nota {
     public void setNotaExamen(double notaExamen) {
         this.notaExamen = notaExamen;
     }
-
 
 }
