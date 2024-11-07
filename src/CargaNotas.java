@@ -7,7 +7,10 @@ public class CargaNotas {
         ArrayList<Alumno> alumnos = new ArrayList<>();
 
         while(true){
-            System.out.println("Ingrese:\n1) Cargar alumno\n2) Salir");
+            System.out.println();
+            System.out.println("----- INICIO -----");
+            System.out.println();
+            System.out.println("1) Cargar alumno\n2) Salir");
             String menu = sc.nextLine();
             if(menu.equals("1")){
                 alumnos.add(cargaA());
@@ -48,7 +51,7 @@ public class CargaNotas {
             }else if (carga.equals("2") && cantidadDeCargas>0) {
                 break;
             }else if (carga.equals("2") && cantidadDeCargas==0){
-                System.out.println("Carga de notas vacia.");
+                System.out.println("Debe cargar al menos una nota.");
             }else {
                 System.out.println("Opcion invalida. Intente de nuevo...");
             }
